@@ -89,14 +89,14 @@ const App = {
             return !this.errors.name && !this.errors.content;
         },
         getList() {
-            axios.get('http://localhost:8000/api/tweets')
+            axios.get('/api/tweets')
                 .then((response) => response.data)
                 .then(data => this.tweets = data)
         },
         submit()  {
             if (this.loading || !this.validate()) return;
             // this.loading = true;
-            axios.post('http://localhost:8000/api/tweets', this.tweet)
+            axios.post('/api/tweets', this.tweet)
                 .then(() => {
                     this.tweet.name = '';
                     this.tweet.content = '';
