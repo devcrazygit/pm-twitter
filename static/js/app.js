@@ -106,16 +106,17 @@ const App = {
                 this.loading = false;
                 })
         },
-        formatDate(dateString) {
-            if (!dateString) return '';
-            const dateTime = new Date(dateString);
-            return (
-                dateTime.getUTCFullYear() +
-                '/' +
-                (dateTime.getUTCMonth() + 1) +
-                '/' +
-                dateTime.getUTCDate()
-            );
+        formatDate(date) {
+            if (!date) return '';
+            var m = new Date(date);
+            var dateString =
+                m.getUTCFullYear() + "/" +
+                ("0" + (m.getUTCMonth()+1)).slice(-2) + "/" +
+                ("0" + m.getUTCDate()).slice(-2) + " " +
+                ("0" + m.getUTCHours()).slice(-2) + ":" +
+                ("0" + m.getUTCMinutes()).slice(-2) + ":" +
+                ("0" + m.getUTCSeconds()).slice(-2);
+            return dateString;
         }
     },
     computed: {
