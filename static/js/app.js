@@ -23,7 +23,7 @@ const App = {
                             <div class="col-md-2 form-label-wrap">
                                 <label class="form-label">Tweet</label>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-10">
                                 <input type="text" class="form-control" v-model="tweet.content"/>
                             </div>
                             </div>
@@ -31,7 +31,7 @@ const App = {
                             <p class="error-message">{{ errors.content }}</p>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 d-flex justify-content-start">
                             <button>Submit</button>
                         </div>
                         </div>
