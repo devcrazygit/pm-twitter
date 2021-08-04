@@ -1,0 +1,29 @@
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+.tweet-form {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.form-grp {
+  display: flex;
+  align-items: center;
+}
+.form-label-wrap {
+  text-align: right;
+}
+.form-label {
+  margin: 0;
+  margin-right: 10px;
+}
+.error-message {
+  color: #ff0000;
+  font-size: 0.75rem;
+}
